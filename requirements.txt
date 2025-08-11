@@ -1,0 +1,14 @@
+streamlit
+pandas
+scikit-learn
+fairlearn
+shap
+lime
+imblearn
+matplotlib
+seaborn
+reportlab
+openpyxl
+dowhy
+numpy
+sqlalchemy
