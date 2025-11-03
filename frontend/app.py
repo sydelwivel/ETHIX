@@ -1,7 +1,23 @@
 # frontend/app.py
 import sys
 import os
+
+# 1. Get the path to the directory containing the current script (frontend)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Get the path to the project root (one level up from frontend)
+project_root = os.path.join(current_dir, '..')
+
+# 3. Add the project root to the system path
+sys.path.insert(0, project_root)
+
+# Now, the imports below should work:
+from backend import community 
+# ... rest of your imports
+import sys
+import os
 from pathlib import Path
+
 
 # ===== Path setup so backend can be imported reliably =====
 # Prefer relative path: assume repo root contains backend/ and frontend/
